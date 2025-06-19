@@ -47,6 +47,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+#donate-qrcode-pix {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .pix-icon {
   margin-right: 10px;
   color: #000000;

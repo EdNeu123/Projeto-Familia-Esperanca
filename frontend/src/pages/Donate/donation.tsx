@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaRegCopy } from 'react-icons/fa';
 import { FaPix } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
+import qr_code from '../../assets/images/qr_code.png';
 
 import './styles.css';
 
@@ -26,6 +27,9 @@ function Donate() {
       <h1>CONTRIBUA</h1>
 
       <div className="container">
+        <img src={qr_code}
+        id='donate-qrcode-pix' />
+        
         <p>Banco: Coop Sicredi</p>
 
         <p>
