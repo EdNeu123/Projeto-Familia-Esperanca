@@ -1,50 +1,61 @@
 .donate {
-  text-align: center;
-  padding: 2rem;
-  font-size: 3rem;
-  color: white;
-  background-color: black;
-  font-family: "League Spartan";
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-h1 {
-  font-size: 5rem;
+  padding: 2rem;
   color: white;
+  background-color: black;
+  font-size: 3rem;
   font-family: "League Spartan";
-  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.container {
+.donate h1 {
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 5rem;
+  font-family: "League Spartan";
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
-  color: #000;
-  padding: 20px;
-  background-color: #f2f2e6ff;
-  font-size: 2rem;
   border-radius: 0.9rem;
+  padding: 20px;
   width: 100%;
   max-width: 600px;
+  background-color: #f2f2e6ff;
+  color: #000;
+  font-size: 2rem;
   box-sizing: border-box;
 }
 
 .donate-button {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 1.5rem;
-  background-color: #f2f2e6ff;
-  border: none;
+  border: #000 solid 2px;
   border-radius: 5px;
+  padding: 12px 24px;
+  background-color: #f2f2e6ff;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border: #000 solid 2px;
 }
 
-p {
-  font-size: 2.25rem;
+.donate p {
   margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+}
+
+.donate-icon {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 2rem;
 }
 
 #donate-qrcode-pix {
@@ -52,86 +63,73 @@ p {
   margin-bottom: 20px;
 }
 
-.pix-icon {
+.donate-pix-icon {
   margin-right: 10px;
   color: #000000;
   font-size: 2rem;
 }
 
-.copy-icon-button {
-  margin-left: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: black;
-  vertical-align: middle;
+.donate-copy-icon-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  margin-left: 10px;
+  border: none;
   padding: 0;
-}
-
-.donate-icon {
-  font-size: 2rem;
-  margin-right: 10px;
+  background: none;
   color: black;
-  vertical-align: middle;
+  cursor: pointer;
+  font-size: 28px;
 }
 
-.pix-message {
-  margin-top: 10px;
-  padding: 12px 20px;
-  background-color: #001c5cff;
+.donate-pix-message {
+  margin: 0 auto;
+  border-radius: 8px;
   border: 2px;
+  padding: 12px 20px;
+  max-width: 100%;
+  background-color: #001c5cff;
   color: white;
   font-size: 1.8rem;
-  border-radius: 8px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
-.texto-verse {
-  margin-top: 1.5rem;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.verse {
-  margin-top: 1.5rem;
-  text-align: right;
-  font-size: 1.8rem;
-  color: #ffffff;
-}
-
-.bloquinhuu {
+.donate-quote {
+  margin: 3rem auto;
   border: 2px solid #992900ff;
+  border-radius: 15px 0 15px 0;
   padding: 5rem;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
   width: 100%;
   max-width: 600px;
-  margin: 3rem auto;
   box-sizing: border-box;
 }
 
+.donate-quote h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.donate-quote p {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: right;
+}
+
 @media (max-width: 600px) {
-  h1 {
+  .donate h1 {
     font-size: 3.2rem;
   }
 
-  p {
+  .donate p {
     font-size: 1.8rem;
   }
 
-  .container {
+  .donate-container {
     padding: 15px;
     font-size: 1.8rem;
   }
@@ -141,7 +139,7 @@ p {
     padding: 10px 20px;
   }
 
-  .copy-icon-button {
+  .donate-copy-icon-button {
     font-size: 24px;
   }
 
@@ -154,15 +152,15 @@ p {
     padding: 10px 15px;
   }
 
-  .texto-verse {
+  .donate-quote {
+    padding: 2rem;
+  }
+
+  .donate-quote h2 {
     font-size: 1.9rem;
   }
 
-  .verse {
+  .donate-quote p {
     font-size: 1.5rem;
-  }
-
-  .bloquinhuu {
-    padding: 2rem;
   }
 }
