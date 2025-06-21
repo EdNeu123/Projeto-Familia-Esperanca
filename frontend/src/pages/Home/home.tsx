@@ -9,7 +9,13 @@ function Home() {
     return (
         <main className="home">
             <section className="home-hero page-screen">
-                <video className="hero-video" autoPlay loop muted playsInline>
+                <video
+                    className="hero-video"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                    playsInline={true}
+                >
                     <source src={video} type="video/mp4" />
                 </video>
                 <div className="home-hero-text">
