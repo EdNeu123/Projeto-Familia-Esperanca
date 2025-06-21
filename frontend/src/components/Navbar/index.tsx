@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import icon from '../../assets/images/logo_branca_cortada.png';
 import './styles.css';
 
 export default function Navbar() {
@@ -12,7 +13,10 @@ export default function Navbar() {
     return (
         <header className="navbar-container">
             <nav className="navbar">
-                <div>Icone vai aqui</div>
+                <Link to="/" className="navbar-logo">
+                    <img src={icon} alt="logo" />
+                </Link>
+
                 <div>
                     <input
                         type="checkbox"
@@ -33,19 +37,19 @@ export default function Navbar() {
                         <Link to={'/about'}>Quem somos</Link>
                     </li>
                     <li>
-                        <Link to={'/join'}>Faça parte</Link>
+                        <Link to={'/'}>Faça parte</Link>
                     </li>
                     <li>
-                        <Link to={'/donation'}>Contribua</Link>
+                        <Link to={'/'}>Contribua</Link>
                     </li>
                     <li>
                         <Link to={'/ministry'}>Ministérios</Link>
                     </li>
                     <li>
-                        <Link to={'/cell'}>Nossas Células</Link>
+                        <Link to={'/'}>Nossas Células</Link>
                     </li>
                     <li>
-                        <Link to={'/events'}>Eventos e Cursos</Link>
+                        <Link to={'/'}>Eventos e Cursos</Link>
                     </li>
                 </ul>
             </nav>

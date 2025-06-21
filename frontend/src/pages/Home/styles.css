@@ -32,7 +32,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0 0 10px #FFF, 0 0 20px #fff891, 0 0 40px #fff891, 0 0 80px #fff891;
+    text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
 
 .home-hero-text h1 span {
@@ -42,7 +42,7 @@
     font-size: 14rem;
     line-height: 100px;
     text-transform: lowercase;
-    text-shadow: 0 0 10px #FFF, 0 0 20px #fff891, 0 0 40px #fff891, 0 0 80px #fff891;
+    text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
 
 @media screen and (max-width: 640px),
@@ -309,5 +309,172 @@ screen and (max-height: 640px) {
 
     .home-about-list hr {
         width: 120px;
+    }
+}
+
+/* ============================================================================================ */
+.about-paradigm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.about-paradigm-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.about-paradigm-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-paradigm h1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    width: 50%;
+    max-width: 570px;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.about-paradigm-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-paradigm-text-box {
+    width: 100%;
+}
+
+.about-paradigm-text-box h3 {
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.about-paradigm-text-box:nth-child(2) h3 {
+    text-align: end;
+}
+
+.about-paradigm-text-box p {
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #ff440099;
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.about-paradigm h1 span:nth-of-type(1) {
+    text-align: start;
+}
+
+.about-paradigm h1 span:nth-of-type(2) {
+    text-align: end;
+}
+
+@media screen and (max-width: 640px) {
+    .about-paradigm h1 {
+        font-size: 10rem;
+    }
+
+    .about-paradigm-text-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .about-paradigm-text-box p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .about-paradigm h1 {
+        display: none;
+    }
+
+    .about-paradigm-text-box h3 {
+        font-size: 2rem;
+    }
+
+    .about-paradigm-text-box p {
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== ABOUT - PASTOR ===== */
+.about-pastor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.about-pastor:nth-last-of-type(2) {
+    justify-content: end;
+}
+
+.about-pastor-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.about-pastor-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.about-pastor h2,
+.about-pastor h3 {
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+
+    .about-pastor h2,
+    .about-pastor h3 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-height: 640px) {
+
+    .about-pastor h2,
+    .about-pastor h3 {
+        font-size: 3rem;
     }
 }
