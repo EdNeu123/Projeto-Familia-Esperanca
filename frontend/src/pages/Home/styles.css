@@ -9,9 +9,9 @@
 
 .hero-video {
     min-width: 220px;
-    width: 90%;
+    width: 100%;
     max-width: 1536px;
-    height: 70%;
+    height: 80%;
     aspect-ratio: 2/1;
     object-fit: cover;
 }

@@ -1,0 +1,166 @@
+.donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  font-family: "League Spartan";
+  text-align: center;
+}
+
+.donate h1 {
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 5rem;
+  font-family: "League Spartan";
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 0.9rem;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f2f2e6ff;
+  color: #000;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+.donate-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: #000 solid 2px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  background-color: #f2f2e6ff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate p {
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+}
+
+.donate-icon {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 2rem;
+}
+
+#donate-qrcode-pix {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.donate-pix-icon {
+  margin-right: 10px;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.donate-copy-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border: none;
+  padding: 0;
+  background: none;
+  color: black;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.donate-pix-message {
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px;
+  padding: 12px 20px;
+  max-width: 100%;
+  background-color: #001c5cff;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.donate-quote {
+  margin: 3rem auto;
+  border: 2px solid #992900ff;
+  border-radius: 15px 0 15px 0;
+  padding: 5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.donate-quote h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.donate-quote p {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .donate h1 {
+    font-size: 3.2rem;
+  }
+
+  .donate p {
+    font-size: 1.8rem;
+  }
+
+  .donate-container {
+    padding: 15px;
+    font-size: 1.8rem;
+  }
+
+  .donate-button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+
+  .donate-copy-icon-button {
+    font-size: 24px;
+  }
+
+  .donate-icon {
+    font-size: 1.8rem;
+  }
+
+  .pix-message {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+
+  .donate-quote {
+    padding: 2rem;
+  }
+
+  .donate-quote h2 {
+    font-size: 1.9rem;
+  }
+
+  .donate-quote p {
+    font-size: 1.5rem;
+  }
+}
