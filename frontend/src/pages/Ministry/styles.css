@@ -76,3 +76,9 @@
 .ministry-card:last-child {
     border-bottom: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .ministry-content {
+        flex-direction: column;
+    }
+}
