@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     padding: 20px;
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: #000000;
     z-index: 999;
@@ -31,7 +31,7 @@
 
 .navbar-options {
     position: absolute;
-    top: 70px;
+    top: 100px;
     right: 0;
     display: none;
     border-left: 1px solid #FFC642;
@@ -104,6 +104,7 @@
 @media screen and (max-width: 640px),
 screen and (max-height: 640px) {
     .navbar-container {
+        padding: 5px 20px;
         height: 60px;
     }
 

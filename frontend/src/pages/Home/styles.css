@@ -462,6 +462,12 @@ screen and (max-height: 640px) {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-pastor-bg-image img {
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width: 640px) {
 
     .about-pastor h2,
