@@ -1,5 +1,6 @@
 import F from '../../assets/images/F.png';
-import I from '../../assets/images/I.png';
+import pastora from '../../assets/images/pastora.jpg';
+import pastor from '../../assets/images/pastor.jpg';
 import './styles.css';
 
 function About() {
@@ -38,14 +39,14 @@ function About() {
             </section>
             <section className="about-pastor page-screen page-padding">
                 <div className="about-pastor-bg-image">
-                    <img src={I} className="" />
+                    <img src={pastora} className="" />
                 </div>
                 <h2>Nossos pastores</h2>
                 <h3>Daniela Pardini</h3>
             </section>
             <section className="about-pastor page-screen page-padding">
                 <div className="about-pastor-bg-image">
-                    <img src={F} className="" />
+                    <img src={pastor} className="" />
                 </div>
                 <h3>Felipe Pardini</h3>
             </section>
