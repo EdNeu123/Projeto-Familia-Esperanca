@@ -50,9 +50,6 @@ function About() {
                 </div>
                 <h3>Felipe Pardini</h3>
             </section>
-            <section>
-                <h3>Nossa identidade é de adoração</h3>
-            </section>
         </main>
     );
 }
