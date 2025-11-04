@@ -36,18 +36,12 @@ export default function Navbar() {
                     <li>
                         <Link to={'/about'}>Quem somos</Link>
                     </li>
-                    {/* <li>
-                        <Link to={'/'}>Faça parte</Link>
-                    </li> */}
                     <li>
                         <Link to={'/donation'}>Contribua</Link>
                     </li>
                     <li>
-                        <Link to={'/ministry'}>Ministérios</Link>
+                        <Link to={'/ministry'}>Faixa Etária</Link>
                     </li>
-                    {/* <li>
-                        <Link to={''}>Nossas Células</Link>
-                    </li> */}
                     <li>
                         <Link
                             to={'https://www.e-inscricao.com/famlia-esperanca'}

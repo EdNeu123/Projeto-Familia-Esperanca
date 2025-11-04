@@ -21,7 +21,7 @@ function Donate() {
             <h1>Contribua</h1>
             <div className="donate-container">
                 <img src={qr_code} id="donate-qrcode-pix" />
-                <p>Banco: Coop Sicredi</p>
+                <p>Banco: Cooperativa Sicredi</p>
                 <p>
                     Agência: 2602
                     <button
@@ -33,7 +33,7 @@ function Donate() {
                     </button>
                 </p>
                 <p>
-                    Conta: 16949-8
+                    Conta: 82703-6
                     <button
                         className="donate-copy-icon-button"
                         onClick={() => handleCopy('169498', 'Conta copiada!')}
@@ -45,14 +45,14 @@ function Donate() {
                 <br />
                 <p>
                     <FaPix className="donate-icon" />
-                    Chave Pix: 62.955.505/0256-66
+                    Chave Pix: 62.868.359/0001-32
                 </p>
                 {messageVisible && (
                     <div className="donate-pix-message">{message}</div>
                 )}
                 <button
                     className="donate-button"
-                    onClick={() => handleCopy('62955505025666', 'Pix copiado!')}
+                    onClick={() => handleCopy('62.868.359/0001-32', 'Pix copiado!')}
                 >
                     <IoDocumentText className="donate-icon" />
                     Copiar pix

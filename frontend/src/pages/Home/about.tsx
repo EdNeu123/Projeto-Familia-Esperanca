@@ -1,6 +1,6 @@
 import F from '../../assets/images/F.png';
-import pastora from '../../assets/images/pastora.jpg';
-import pastor from '../../assets/images/pastor.jpg';
+import pastora from '../../assets/images/pastora.png';
+import pastor from '../../assets/images/pastor.png';
 import './styles.css';
 
 function About() {
@@ -48,7 +48,7 @@ function About() {
                 <div className="about-pastor-bg-image">
                     <img src={pastor} className="" />
                 </div>
-                <h3>Felipe Pardini</h3>
+                <h3>Filipe Pardini</h3>
             </section>
         </main>
     );

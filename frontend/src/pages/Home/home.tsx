@@ -69,19 +69,9 @@ function Home() {
                         9h & 18h
                     </li>
                     <li>
-                        <strong>Quinta</strong>
+                        <strong>Terça</strong>
                         <hr />
-                        20h
-                    </li>
-                    <li>
-                        <strong>Shout</strong>
-                        <hr />
-                        Sábado - 18h
-                    </li>
-                    <li>
-                        <strong>Metanoia</strong>
-                        <hr />
-                        Sábado - 19h
+                        14h30
                     </li>
                 </ul>
             </section>
