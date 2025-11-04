@@ -39,8 +39,6 @@ function Ministry() {
                 />
                 <div className="ministry-text-content">
                     <h2>FAIXA ETÁRIAS</h2>
-                    <p>"O maior entre vocês deverá ser servo."</p>
-                    <span>Mateus 23:11</span>
                 </div>
             </div>
             <div className="ministries-list">
