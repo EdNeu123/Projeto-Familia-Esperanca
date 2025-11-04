@@ -36,7 +36,7 @@ function Donate() {
                     Conta: 82703-6
                     <button
                         className="donate-copy-icon-button"
-                        onClick={() => handleCopy('169498', 'Conta copiada!')}
+                        onClick={() => handleCopy('827036', 'Conta copiada!')}
                         title="Copiar Conta"
                     >
                         <FaRegCopy />
@@ -52,7 +52,7 @@ function Donate() {
                 )}
                 <button
                     className="donate-button"
-                    onClick={() => handleCopy('62.868.359/0001-32', 'Pix copiado!')}
+                    onClick={() => handleCopy('62868359000132', 'Pix copiado!')}
                 >
                     <IoDocumentText className="donate-icon" />
                     Copiar pix
