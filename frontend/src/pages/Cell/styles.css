@@ -1,0 +1,116 @@
+/* ======= Layout Geral ======= */
+
+.page {
+    background: #000;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ======= Título ======= */
+
+.title {
+    font-size: 72px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+/* ======= Grid ======= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+/* ======= Card ======= */
+
+.card {
+    background: #111;
+    border: 2px solid #ff5200;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 320px;
+    padding: 25px 22px;
+    color: white;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #ff6a21;
+}
+
+/* ======= Card título ======= */
+
+.card-title {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* ======= Informações ======= */
+
+.info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+/* ======= Botão ======= */
+
+.btn {
+    margin-top: 18px;
+    width: auto;
+    padding: 8px 18px;
+    background: #ff5200;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #ff6a21;
+}
+
+/* ======= Toast ======= */
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff5200;
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    animation: fadeInOut 4s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
