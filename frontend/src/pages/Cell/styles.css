@@ -1,116 +1,129 @@
 /* ======= Layout Geral ======= */
 
-.page {
-    background: #000;
-    min-height: 100vh;
-    padding: 40px 0;
+.cell-page {
     display: flex;
     justify-content: center;
+    padding: 40px 0;
+    background: #000;
 }
 
-.container {
+.cell-container {
+    padding: 0 20px;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
 }
 
 /* ======= Título ======= */
 
-.title {
+.cell-title {
+    margin-bottom: 60px;
     font-size: 72px;
     font-weight: 800;
     color: #fff;
     text-align: center;
-    margin-bottom: 60px;
     letter-spacing: 2px;
 }
 
 /* ======= Grid ======= */
 
-.grid {
+.cell-grid {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
-    justify-items: center;
 }
 
 /* ======= Card ======= */
 
-.card {
-    background: #111;
+.cell-card {
     border: 2px solid #ff5200;
     border-radius: 18px;
+    padding: 25px 22px;
     width: 100%;
     max-width: 320px;
-    padding: 25px 22px;
     color: white;
+    background: #111;
     text-align: left;
     transition: 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-4px);
     border-color: #ff6a21;
+    transform: translateY(-4px);
 }
 
 /* ======= Card título ======= */
 
-.card-title {
+.cell-card-title {
+    margin-bottom: 20px;
     font-size: 28px;
     font-weight: 400;
-    text-align: center;
-    margin-bottom: 20px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 /* ======= Informações ======= */
 
-.info p {
+.cell-info p {
     margin: 6px 0;
     font-size: 15px;
 }
 
-.info span {
+.cell-info span {
     font-weight: bold;
 }
 
 /* ======= Botão ======= */
 
-.btn {
-    margin-top: 18px;
-    width: auto;
-    padding: 8px 18px;
-    background: #ff5200;
-    color: white;
+.cell-btn {
     border: none;
     border-radius: 6px;
+    margin-top: 18px;
+    padding: 8px 18px;
+    width: auto;
+    background: #ff5200;
+    color: white;
     font-size: 14px;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.btn:hover {
+.cell-btn:hover {
     background: #ff6a21;
 }
 
 /* ======= Toast ======= */
 
-.toast {
+.cell-toast {
     position: fixed;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%);
-    background: #ff5200;
-    padding: 12px 20px;
     border-radius: 6px;
+    padding: 12px 20px;
     color: white;
+    background: #ff5200;
     font-weight: bold;
     animation: fadeInOut 4s ease;
+    transform: translateX(-50%);
 }
 
 @keyframes fadeInOut {
-    0% { opacity: 0; transform: translateY(-10px); }
-    10% { opacity: 1; transform: translateY(0); }
-    90% { opacity: 1; }
-    100% { opacity: 0; transform: translateY(-10px); }
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 }
