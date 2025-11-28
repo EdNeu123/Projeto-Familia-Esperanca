@@ -43,6 +43,9 @@ export default function Navbar() {
                         <Link to={'/ministry'}>Faixa Etária</Link>
                     </li>
                     <li>
+                        <Link to={'/cell'}>Células</Link>
+                    </li>
+                    <li>
                         <Link
                             to={'https://www.e-inscricao.com/famlia-esperanca'}
                         >

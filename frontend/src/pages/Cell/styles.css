@@ -1,0 +1,129 @@
+/* ======= Layout Geral ======= */
+
+.cell-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background: #000;
+}
+
+.cell-container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ======= Título ======= */
+
+.cell-title {
+    margin-bottom: 60px;
+    font-size: 72px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* ======= Grid ======= */
+
+.cell-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* ======= Card ======= */
+
+.cell-card {
+    border: 2px solid #ff5200;
+    border-radius: 18px;
+    padding: 25px 22px;
+    width: 100%;
+    max-width: 320px;
+    color: white;
+    background: #111;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #ff6a21;
+    transform: translateY(-4px);
+}
+
+/* ======= Card título ======= */
+
+.cell-card-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* ======= Informações ======= */
+
+.cell-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.cell-info span {
+    font-weight: bold;
+}
+
+/* ======= Botão ======= */
+
+.cell-btn {
+    border: none;
+    border-radius: 6px;
+    margin-top: 18px;
+    padding: 8px 18px;
+    width: auto;
+    background: #ff5200;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cell-btn:hover {
+    background: #ff6a21;
+}
+
+/* ======= Toast ======= */
+
+.cell-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    border-radius: 6px;
+    padding: 12px 20px;
+    color: white;
+    background: #ff5200;
+    font-weight: bold;
+    animation: fadeInOut 4s ease;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
