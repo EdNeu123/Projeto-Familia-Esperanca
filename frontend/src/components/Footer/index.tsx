@@ -1,5 +1,6 @@
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
+import { IoLogoInstagram } from "react-icons/io5";
 import { IoMapOutline } from "react-icons/io5";
 import "./styles.css";
 
@@ -14,17 +15,23 @@ export default function Footer() {
             <li>
               <IoLogoWhatsapp />
               <a
-                href="https://wa.me/554738014163"
+                href="https://api.whatsapp.com/send?phone=5547933867270"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                (47) 3801-4163
+                (47) 93386-7270
               </a>
             </li>
-            <li>
+            {/* <li>
               <IoMailOutline />
               <a href="mailto:secretaria@familiaesperanca.com.br">
                 secretaria@familiaesperanca.com.br
+              </a>
+            </li> */}
+            <li>
+              <IoLogoInstagram />
+              <a href="https://www.instagram.com/familiaesperancaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+                @familiaesperancaa
               </a>
             </li>
             <li>
@@ -34,7 +41,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Família Esperança | Sede: Dona Francisca, 3114 - Saguaçu
+                Família Esperança | Sede: R. Herman Lange, 239 - Costa e Silva
               </a>
             </li>
           </ul>
