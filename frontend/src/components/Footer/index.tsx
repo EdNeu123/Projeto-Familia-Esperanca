@@ -30,7 +30,7 @@ export default function Footer() {
             </li> */}
             <li>
               <IoLogoInstagram />
-              <a href="https://www.instagram.com/familiaesperancaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+              <a href="https://www.instagram.com/familiaesperancaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">
                 @familiaesperancaa
               </a>
             </li>
