@@ -34,11 +34,11 @@ function Ministry() {
             <div className="ministry-content">
                 <img
                     src={image}
-                    alt="Faixa Etária"
+                    alt="Faixas Etárias"
                     className="ministry-image"
                 />
                 <div className="ministry-text-content">
-                    <h2>FAIXA ETÁRIAS</h2>
+                    <h2>FAIXAS ETÁRIAS</h2>
                 </div>
             </div>
             <div className="ministries-list">
