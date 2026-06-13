@@ -20,9 +20,10 @@
 .ministry-image {
     border-radius: 30px;
     max-height: 690px;
+    max-width: 100%; /* Adicionado: impede que a imagem passe da largura da tela */
+    height: auto;    /* Adicionado: garante que ela não fique esticada ou achatada */
     object-fit: cover;
 }
-
 .ministry-text-content {
     display: flex;
     flex-direction: column;
