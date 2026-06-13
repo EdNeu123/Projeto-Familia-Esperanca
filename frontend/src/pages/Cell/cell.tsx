@@ -1,8 +1,8 @@
-import { useState } from 'react';
 import celulasData from './celulas.json';
 import './styles.css';
 
 interface Celula {
+    data: string;
     titulo: string;
     lider: string;
     local: string;
@@ -10,19 +10,17 @@ interface Celula {
 }
 
 export default function Cell() {
-    const [message, setMessage] = useState<string | null>(null);
-
     const handleParticipar = (titulo: string) => {
-        setMessage(
-            `Obrigado! Seu interesse na Célula "${titulo}" foi registrado.`
-        );
-        setTimeout(() => setMessage(null), 4000);
+        // Monta o link do WhatsApp com uma mensagem inicial
+        const texto = encodeURIComponent(`Olá! Gostaria de participar da célula "${titulo}".`);
+        const linkWhatsapp = `https://api.whatsapp.com/send?phone=5547933867270&text=${texto}`;
+
+        // Abre o link em uma nova aba
+        window.open(linkWhatsapp, '_blank');
     };
 
     return (
         <main className="cell-page">
-            {message && <div className="cell-toast">{message}</div>}
-
             <div className="cell-container">
                 <div className="cell-content-area">
                     <div className="cell-header">
@@ -36,7 +34,7 @@ export default function Cell() {
 
                                 <div className="cell-info">
                                     <p>
-                                        <span>Dia:</span> Algum dia / hora
+                                        <span>Dia:</span> {c.data}
                                     </p>
                                     <p>
                                         <span>Líder:</span> {c.lider}
