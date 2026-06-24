@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
-    overflow-y: hidden;
+    /* BUG FIX: overflow-y: hidden cortava o texto; overflow: hidden cobre ambos os eixos corretamente */
+    overflow: hidden;
 }
 
 .hero-video {
@@ -40,7 +41,9 @@
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 14rem;
-    line-height: 100px;
+    /* BUG FIX: line-height: 100px era menor que o font-size (14rem ≈ 224px),
+       causando sobreposição do texto. Usar valor relativo corrige o problema. */
+    line-height: 0.75em;
     text-transform: lowercase;
     text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
@@ -62,7 +65,8 @@ screen and (max-height: 640px) {
 
     .home-hero-text h1 span {
         font-size: 9.35rem;
-        line-height: 60px;
+        /* BUG FIX: mesmo problema do line-height no mobile (era 60px < 9.35rem ≈ 150px) */
+        line-height: 0.75em;
     }
 }
 
@@ -72,7 +76,9 @@ screen and (max-height: 640px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 420px;
+    /* BUG FIX: altura aumentada para acomodar as imagens absolutas sem sobrepor a seção seguinte */
+    min-height: 520px;
+    padding-bottom: 220px;
 }
 
 .home-mission h3 {
@@ -193,7 +199,8 @@ screen and (max-height: 640px) {
 
 @media screen and (max-height: 640px) {
     .home-mission {
-        height: 340px;
+        min-height: 340px;
+        padding-bottom: 160px;
     }
 
     .home-mission-images-container {
@@ -206,7 +213,6 @@ screen and (max-height: 640px) {
         min-height: 140px;
         max-height: 210px;
     }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -219,7 +225,9 @@ screen and (max-height: 640px) {
     }
 
     .home-mission {
-        height: 380px;
+        min-height: 420px;
+        /* BUG FIX: padding-bottom para não sobrepor a seção de Celebrações no mobile */
+        padding-bottom: 460px;
     }
 }
 
@@ -231,6 +239,9 @@ screen and (max-height: 640px) {
     align-items: center;
     justify-content: end;
     text-align: center;
+    /* BUG FIX: padding-top adicionado para que as imagens flutuantes da seção acima
+       não cubram o conteúdo "Nossas Celebrações" */
+    padding-top: 220px;
 }
 
 .home-about-bg-image {
@@ -256,7 +267,8 @@ screen and (max-height: 640px) {
 .home-about-bg-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    /* BUG FIX: era "contain", deixando bordas pretas ao redor da imagem de fundo */
+    object-fit: cover;
     object-position: center;
 }
 
@@ -319,6 +331,8 @@ screen and (max-height: 640px) {
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.45);
+    /* BUG FIX: overflow hidden garante que conteúdo maior que a seção não vaze para fora */
+    overflow: hidden;
 }
 
 .about-paradigm-bg-image {
@@ -354,10 +368,13 @@ screen and (max-height: 640px) {
 .about-paradigm-text-container {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
     width: 100%;
-    height: 100%;
+    /* BUG FIX: "height: 100%" em filho de flex não funciona como esperado.
+       "flex: 1" faz o container ocupar o espaço restante corretamente. */
+    flex: 1;
+    min-height: 0;
 }
 
 .about-paradigm-text-box {
@@ -449,8 +466,10 @@ screen and (max-height: 640px) {
 .about-pastor-bg-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
+    /* BUG FIX: era "contain", deixando bordas pretas nas laterais das fotos dos pastores.
+       "cover" preenche a área toda mantendo proporção. */
+    object-fit: cover;
+    object-position: top center;
 }
 
 .about-pastor h2,
@@ -475,7 +494,6 @@ screen and (max-height: 640px) {
         font-size: 3rem;
     }
 }
-
 
 @media screen and (max-height: 640px) {
 
