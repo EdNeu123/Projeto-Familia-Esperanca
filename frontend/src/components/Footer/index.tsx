@@ -1,5 +1,4 @@
 import { IoLogoWhatsapp } from "react-icons/io5";
-import { IoMailOutline } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoMapOutline } from "react-icons/io5";
 import "./styles.css";
