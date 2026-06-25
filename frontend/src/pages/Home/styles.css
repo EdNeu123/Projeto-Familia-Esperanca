@@ -11,7 +11,6 @@
     min-width: 220px;
     width: 100%;
     max-width: 1536px;
-    flex: 1;
     aspect-ratio: 2/1;
     object-fit: cover;
 }
