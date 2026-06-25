@@ -4,16 +4,14 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
-    overflow: hidden;
-    /* contém tudo dentro do bloco fixo */
+    overflow: hidden; /* contém tudo dentro do bloco fixo */
 }
 
 .hero-video {
     min-width: 220px;
     width: 100%;
     max-width: 1536px;
-    flex: 1;
-    /* ocupa o espaço que sobrar depois do texto */
+    flex: 1; /* ocupa o espaço que sobrar depois do texto */
     object-fit: cover;
 }
 
@@ -21,10 +19,9 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    padding: 15px 0 80px 0;
+    padding: 15px 0;
     width: 100%;
 }
-
 .home-hero-text h1 {
     color: #FFF;
     font-family: "Poppins", sans-serif;
@@ -36,11 +33,13 @@
 }
 
 .home-hero-text h1 span {
+    display: block; 
     color: #FFF;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 14rem;
     line-height: 0.75em;
+    padding-bottom: 0.4em;
     text-transform: lowercase;
     text-shadow: 0 0 10px #FFF, 0 0 20px #eeeeee, 0 0 40px #eeeeee, 0 0 80px #eeeeee;
 }
