@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
-    overflow-x: hidden;
+    overflow: hidden; /* contém tudo dentro do bloco fixo */
 }
 
 .hero-video {
     min-width: 220px;
     width: 100%;
     max-width: 1536px;
-    aspect-ratio: 2/1;
+    flex: 1; /* ocupa o espaço que sobrar depois do texto */
     object-fit: cover;
 }
 
@@ -22,7 +22,6 @@
     padding: 15px 0;
     width: 100%;
 }
-
 .home-hero-text h1 {
     color: #FFF;
     font-family: "Poppins", sans-serif;
